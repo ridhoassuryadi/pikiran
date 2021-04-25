@@ -9,6 +9,11 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 
+
+// svelte.config is a CommonJS module
+// it needs to be imported this way
+const { preprocess } = require('./svelte.config');
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
@@ -33,7 +38,7 @@ export default {
 			svelte({
 				compilerOptions: {
 					dev,
-					hydratable: true
+					hydratable: true,
 				}
 			}),
 			url({
