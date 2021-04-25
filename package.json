@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "PersonalSiteRidho",
+  "description": "Personal site for ridho assuryadi",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
