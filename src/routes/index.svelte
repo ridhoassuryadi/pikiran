@@ -13,7 +13,10 @@
       <p>Software Engineer</p>
    </header>
    <article>
-      <h2>About</h2>
+      <div class="section__title">
+	        <img src="./icon__about.png" alt="icon about"/>
+	        <h2>About</h2>
+	  </div>
       <p>I'm a New Zealand-born, multi-disciplinary designer, with over 9 years experience.</p>
       <p>Right now I'm based in Australia. But over the last decade I've spent time living in Japan and the United States.</p>
    </article>
@@ -52,6 +55,6 @@
       <p>I'd be happy to write back if you'd like to send me an <a href="mailto:hi@jonathontoon.com" target="_blank">email</a>. Otherwise you can follow me on <a href="https://twitter.com/jonathontoon/" target="_blank">Twitter</a>, <a href="https://github.com/jonathontoon/" target="_blank">Github</a> or <a href="https://linkedin.com/in/jonathontoon/" target="_blank">LinkedIn</a>.</p>
    </article>
    <footer>
-      <p>The information on this web page was last updated Monday, March 15, 2021. Content provided under <a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">CC BY-NC 3.0</a>.</p>
+      <p>The information on this web page was last updated Monday, April 25, 2021.</p>
    </footer>
 </section>
