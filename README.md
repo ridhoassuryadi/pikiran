@@ -1,41 +1,34 @@
-# 👨‍💻 ridhoassuryadi.co
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) ![Website Up](https://img.shields.io/website-up-down-brightgreen-red/https/ridhoassuryadi.co.svg)
-> Source code for personal blog [ridhoassuryadi.co](https://ridhoassuryadi.co).
+## Getting Started
 
-
-## 🛠 Developing
-
-A nodejs >= 8.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
+First, run the development server:
 
 ```bash
-# install dependencies
-yarn
-
-# ...or if you'd like to use npm instead
-npm install
-
-# serve with hot reload at localhost:3000
+npm run dev
+# or
 yarn dev
-
-# build for production
-yarn build
 ```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🧩 Use as a template
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-You can use this repo to bootstrap a same blog for yourself.
-Feel free, just click **"Use this template"** button in this repo.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-----
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## 🙌 Credits
+## Learn More
 
-Built with [Sapper](https://sapper.svelte.dev/) and [Tailwind CSS](https://tailwindcss.com/)
+To learn more about Next.js, take a look at the following resources:
 
-## 📄 License
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Except where otherwise noted, all works published on this site (aka. everything inside the `content/` and the `data/` directory) are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The source code to the website is available under the [MIT License](LICENSE).
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
