@@ -49,7 +49,7 @@ export function SidebarNavigation() {
           label: 'TIL',
           icon: LampOn,
           trailingAccessory: null,
-          isActive: router.asPath.indexOf('/crit') >= 0,
+          isActive: router.asPath.indexOf('/til') >= 0,
           trailingAction: null,
           isExternal: false,
         },

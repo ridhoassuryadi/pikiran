@@ -35,6 +35,17 @@ module.exports = {
         'hacker-news': '#FF965A',
         twitter: '#479BEA',
         current: 'currentColor',
+        blue: {
+          100: '#D4FCFE',
+          200: '#AAF4FD',
+          300: '#7FE5FB',
+          400: '#5ED2F7',
+          500: '#2bb5f2',
+          600: '#1F8ED0',
+          700: '#156BAE',
+          800: '#0D4C8C',
+          900: '#083674'
+        },
         'dark-gray': {
           50: '#eceaf1',
           100: '#d3d1d9',
