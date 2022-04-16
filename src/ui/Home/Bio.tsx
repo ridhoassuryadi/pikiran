@@ -50,7 +50,10 @@ function TableRow({ href, title, subtitle, date }: TableRowProps) {
 function SectionContainer(props) {
   return (
     <div
-      className={"grid items-start grid-cols-1 gap-6 md:grid-cols-12 relative " + props.customStyle}
+      className={
+        'grid items-start grid-cols-1 gap-6 md:grid-cols-12 relative ' +
+        props.customStyle
+      }
       {...props}
     />
   )
@@ -93,7 +96,7 @@ const speakingData = [
     href: 'https://museapp.com/podcast/51-personal-brand/',
     title: 'Belajar Koding Hari Gini',
     date: "July '18",
-  }
+  },
 ]
 
 export function Intro() {
@@ -114,11 +117,11 @@ export function Intro() {
 
       <Detail.ContentContainer>
         <div className="pb-24 space-y-8 md:space-y-16">
-          <SectionContainer >
+          <SectionContainer>
             <SectionTitle />
-  
+
             <SectionContent>
-            <Image
+              <Image
                 priority={false}
                 src="/static/images/hello.png"
                 width={54}
@@ -333,4 +336,4 @@ export function Intro() {
       </Detail.ContentContainer>
     </Detail.Container>
   )
-};
+}

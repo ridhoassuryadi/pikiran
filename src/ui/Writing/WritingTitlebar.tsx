@@ -1,13 +1,14 @@
 import * as React from 'react'
 import { Plus, Radio } from 'react-feather'
 
+import { useViewerQuery } from '~/shared/hooks/useViewerQuery'
 import Button, { GhostButton } from '~ui/_base/Button'
-import { TitleBar } from '~ui/_base/ListDetail/TitleBar'
 import { DialogComponent } from '~ui/_base/Dialog'
+import { TitleBar } from '~ui/_base/ListDetail/TitleBar'
 import SegmentedControl from '~ui/_base/SegmentedController'
+
 import { WritingContext } from './PostsList'
 import { WritingSubscriptionForm } from './SubscriptionForm'
-import { useViewerQuery } from '~/shared/hooks/useViewerQuery';
 
 export function WritingTitlebar({ scrollContainerRef }) {
   const { data } = useViewerQuery()

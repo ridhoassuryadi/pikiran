@@ -3,7 +3,6 @@ import * as React from 'react'
 
 import { ListContainer } from '~ui/_base/ListDetail/ListContainer'
 
-
 import { PostListItem } from './PostListItem'
 import { WritingTitlebar } from './WritingTitlebar'
 
@@ -17,7 +16,7 @@ export function PostsList() {
   const [filter, setFilter] = React.useState('published')
   let [scrollContainerRef, setScrollContainerRef] = React.useState(null)
 
-  const { posts } = {posts:[]};
+  const { posts } = { posts: [] }
 
   const defaultContextValue = {
     filter,

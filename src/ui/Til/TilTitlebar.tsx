@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { Plus, Radio } from 'react-feather'
 
+import { useViewerQuery } from '~/shared/hooks/useViewerQuery'
 import { GhostButton } from '~ui/_base/Button'
 import { TitleBar } from '~ui/_base/ListDetail/TitleBar'
 import SegmentedControl from '~ui/_base/SegmentedController'
+
 import { WritingContext } from './TilList'
-import { useViewerQuery } from '~/shared/hooks/useViewerQuery';
 
 export function JournalTitlebar({ scrollContainerRef }) {
   const { data } = useViewerQuery()
@@ -27,11 +28,7 @@ export function JournalTitlebar({ scrollContainerRef }) {
   }
 
   function trailingAccessory() {
-    return (
-      <div className="flex space-x-2">
-        {getAddButton()}
-      </div>
-    )
+    return <div className="flex space-x-2">{getAddButton()}</div>
   }
 
   function getChildren() {

@@ -1,9 +1,9 @@
 export const useViewerQuery = () => {
-   return {
-       data: { 
-         viewer: {
-           isAdmin: false
-       }
-    }
-   }
+  return {
+    data: {
+      viewer: {
+        isAdmin: false,
+      },
+    },
+  }
 }

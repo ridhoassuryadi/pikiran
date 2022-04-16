@@ -1,7 +1,7 @@
 import * as React from 'react'
 
+import { Journal } from '~modules/journal/models/journalModel'
 import { ListItem } from '~ui/_base/ListDetail/ListItem'
-import {Journal} from '~modules/journal/models/journalModel'
 
 interface Props {
   post: Journal

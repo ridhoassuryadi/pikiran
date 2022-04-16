@@ -2,7 +2,6 @@ import Link from 'next/link'
 import * as React from 'react'
 import { ArrowLeft, Menu, X } from 'react-feather'
 
-
 interface Props {
   title: string
   globalMenu?: boolean
@@ -13,8 +12,8 @@ interface Props {
   scrollContainerRef?: React.MutableRefObject<HTMLDivElement>
   children?: React.ReactNode
   leadingAccessory?: React.ReactNode
-  trailingAccessory?: React.ReactNode,
-  isBrightColor?: boolean,
+  trailingAccessory?: React.ReactNode
+  isBrightColor?: boolean
 }
 
 export function TitleBar({
@@ -30,10 +29,8 @@ export function TitleBar({
   isBrightColor = false,
   children,
 }: Props) {
-  const isOpen = false;
-  const setIsOpen = (isOpen) => {
-
-  }
+  const isOpen = false
+  const setIsOpen = (isOpen) => {}
   const [darkMode, setDarkMode] = React.useState(false)
   const [offset, setOffset] = React.useState(200)
   const [opacity, _setOpacity] = React.useState(0)
@@ -104,19 +101,16 @@ export function TitleBar({
       window?.matchMedia('(prefers-color-scheme: dark)').matches
     if (isDarkMode) setDarkMode(true)
   }, [])
-  
+
   const backgroundColor = React.useMemo(() => {
-    return isBrightColor ? 
-  `rgba(38, 34, 47,${
-    currentScrollOffset === 0
-      ? 1
-      : currentScrollOffset + 0.5
-  })`
-   : `rgba(1, 10, 27,${
-    currentScrollOffset === 0
-      ? 1
-      : currentScrollOffset + 0.5
-  })`}, [currentScrollOffset, isBrightColor]);
+    return isBrightColor
+      ? `rgba(38, 34, 47,${
+          currentScrollOffset === 0 ? 1 : currentScrollOffset + 0.5
+        })`
+      : `rgba(1, 10, 27,${
+          currentScrollOffset === 0 ? 1 : currentScrollOffset + 0.5
+        })`
+  }, [currentScrollOffset, isBrightColor])
 
   return (
     <>

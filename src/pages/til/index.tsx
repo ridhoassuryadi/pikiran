@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo'
 import * as React from 'react'
 
+import routes from '~/config/routes'
 import { ListDetailView, SiteLayout } from '~ui/_base/Layouts'
 import { TilList } from '~ui/Til/TilList'
-import routes from '~/config/routes'
 
 function TilPage() {
   return (

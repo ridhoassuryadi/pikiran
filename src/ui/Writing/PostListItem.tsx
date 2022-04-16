@@ -1,7 +1,7 @@
 import * as React from 'react'
 
+import { Post } from '~modules/post/dto/writingDTO'
 import { ListItem } from '~ui/_base/ListDetail/ListItem'
-import {Post} from '~modules/post/dto/writingDTO'
 
 interface Props {
   post: Post

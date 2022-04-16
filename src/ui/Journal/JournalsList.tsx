@@ -1,13 +1,11 @@
 import { useRouter } from 'next/router'
 import * as React from 'react'
 
+import { journals } from '~/modules/journal/data/journalMock'
 import { ListContainer } from '~ui/_base/ListDetail/ListContainer'
-
 
 import { JournalListItem } from './JournalListItem'
 import { JournalTitlebar } from './JournalTitlebar'
-
-import { journals } from '~/modules/journal/data/journalMock'
 
 export const WritingContext = React.createContext({
   filter: 'published',
@@ -19,7 +17,7 @@ export function JournalsList() {
   const [filter, setFilter] = React.useState('published')
   let [scrollContainerRef, setScrollContainerRef] = React.useState(null)
 
-  const { posts } = {posts:journals};
+  const { posts } = { posts: journals }
 
   const defaultContextValue = {
     filter,

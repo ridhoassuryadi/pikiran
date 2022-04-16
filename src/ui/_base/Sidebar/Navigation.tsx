@@ -1,3 +1,11 @@
+import {
+  Book1,
+  Designtools,
+  Edit2,
+  Home,
+  LampOn,
+  MonitorMobbile,
+} from 'iconsax-react'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 
@@ -7,15 +15,6 @@ import {
   TwitterIcon,
   YouTubeIcon,
 } from '~/ui/_base/Icon'
-
-import {
-  Home,
-  LampOn,
-  Edit2,
-  Designtools,
-  MonitorMobbile,
-  Book1
-} from 'iconsax-react'
 
 import { NavigationLink } from './NavigationLink'
 
@@ -85,7 +84,7 @@ export function SidebarNavigation() {
           isActive: router.asPath.indexOf('/projects/crafts') >= 0,
           trailingAction: null,
           isExternal: false,
-        }
+        },
       ],
     },
     {
@@ -121,14 +120,14 @@ export function SidebarNavigation() {
           isExternal: true,
         },
         {
-            href: 'https://github.com/brianlovin',
-            label: 'Dribble',
-            icon: GitHubIcon,
-            trailingAccessory: ExternalLinkIcon,
-            isActive: false,
-            trailingAction: null,
-            isExternal: true,
-          },
+          href: 'https://github.com/brianlovin',
+          label: 'Dribble',
+          icon: GitHubIcon,
+          trailingAccessory: ExternalLinkIcon,
+          isActive: false,
+          trailingAction: null,
+          isExternal: true,
+        },
       ],
     },
   ]
