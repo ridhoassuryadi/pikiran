@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export function SidebarOverlay() {
-  const [ isOpen, setIsOpen ] = React.useState<boolean>(false)
+  const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
   return (
     <div

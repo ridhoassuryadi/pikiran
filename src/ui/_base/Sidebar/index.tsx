@@ -6,7 +6,7 @@ import { SidebarNavigation } from './Navigation'
 import { SidebarOverlay } from './Overlay'
 
 export function Sidebar() {
-  const isOpen = true;
+  const isOpen = true
   const scrollContainerRef = React.useRef(null)
   return (
     <>

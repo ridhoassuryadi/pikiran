@@ -1,10 +1,10 @@
 import * as React from 'react'
 
+import { validEmail } from '~/shared/lib/validators'
 import { ErrorAlert, SuccessAlert } from '~ui/_base/Alert'
 import { PrimaryButton } from '~ui/_base/Button'
 import { Input } from '~ui/_base/Input'
 import { LoadingSpinner } from '~ui/_base/LoadingSpinner'
-import { validEmail } from '~/shared/lib/validators'
 
 export function WritingSubscriptionForm({ defaultValue = '' }) {
   const [email, setEmail] = React.useState(defaultValue)

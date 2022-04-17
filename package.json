@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ./src/pages/* ./src/ui/* ./src/shared/* -c .eslintrc.json --fix --ext ts,tsx"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
@@ -30,9 +30,27 @@
     "@types/node": "17.0.23",
     "@types/react": "18.0.0",
     "@types/react-dom": "18.0.0",
-    "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.8",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-mdx": "^1.16.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
     "tailwindcss": "^3.0.17",
-    "typescript": "4.6.3"
+    "typescript": "4.6.3",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
   }
 }

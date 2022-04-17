@@ -7,6 +7,8 @@ import Button from '~ui/_base/Button'
 import { Detail } from '~ui/_base/ListDetail/Detail'
 import { TitleBar } from '~ui/_base/ListDetail/TitleBar'
 
+import { WorkHistoryList } from './WorkHistory'
+
 function SectionTitle(props) {
   return (
     <h4
@@ -50,7 +52,10 @@ function TableRow({ href, title, subtitle, date }: TableRowProps) {
 function SectionContainer(props) {
   return (
     <div
-      className={"grid items-start grid-cols-1 gap-6 md:grid-cols-12 relative " + props.customStyle}
+      className={
+        'grid items-start grid-cols-1 gap-6 md:grid-cols-12 relative ' +
+        props.customStyle
+      }
       {...props}
     />
   )
@@ -93,7 +98,7 @@ const speakingData = [
     href: 'https://museapp.com/podcast/51-personal-brand/',
     title: 'Belajar Koding Hari Gini',
     date: "July '18",
-  }
+  },
 ]
 
 export function Intro() {
@@ -114,11 +119,11 @@ export function Intro() {
 
       <Detail.ContentContainer>
         <div className="pb-24 space-y-8 md:space-y-16">
-          <SectionContainer >
+          <SectionContainer>
             <SectionTitle />
-  
+
             <SectionContent>
-            <Image
+              <Image
                 priority={false}
                 src="/static/images/hello.png"
                 width={54}
@@ -282,7 +287,7 @@ export function Intro() {
             <SectionContent>
               <Image
                 priority
-                src="/static/images/sf.png"
+                src="/static/images/serpong.png"
                 width={800}
                 height={400}
                 layout="responsive"
@@ -300,17 +305,7 @@ export function Intro() {
           <SectionContainer>
             <SectionTitle>Work</SectionTitle>
             <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {workHistory.map((job) => (
-                  <TableRow
-                    href={job.href}
-                    title={job.title}
-                    subtitle={job.subtitle}
-                    date={job.date}
-                    key={job.href}
-                  />
-                ))}
-              </div>
+              <WorkHistoryList />
             </SectionContent>
           </SectionContainer>
 
@@ -333,4 +328,4 @@ export function Intro() {
       </Detail.ContentContainer>
     </Detail.Container>
   )
-};
+}

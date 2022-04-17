@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-
 export function NavigationLink({
   link: {
     href,
@@ -13,9 +12,7 @@ export function NavigationLink({
     isExternal,
   },
 }) {
-  const setIsOpen = (isOpen: boolean) => {
-  
-  };
+  const setIsOpen = (isOpen: boolean) => {}
   return (
     <li
       className="flex items-stretch space-x-1"
@@ -32,7 +29,11 @@ export function NavigationLink({
           }`}
         >
           <span className="flex items-center justify-center w-4">
-            <Icon width="16" height="16" variant={isActive && "Bulk"}/>
+            <Icon
+              width="16"
+              height="16"
+              variant={isActive ? 'Bulk' : 'TwoTone'}
+            />
           </span>
           <span className="flex-1">{label}</span>
           {Accessory && (

@@ -3,10 +3,8 @@ import * as React from 'react'
 
 import { ListContainer } from '~ui/_base/ListDetail/ListContainer'
 
-
 import { TilListItem } from './TilListItem'
 import { JournalTitlebar } from './TilTitlebar'
-
 
 export const WritingContext = React.createContext({
   filter: 'published',
@@ -18,7 +16,7 @@ export function TilList() {
   const [filter, setFilter] = React.useState('published')
   let [scrollContainerRef, setScrollContainerRef] = React.useState(null)
 
-  const { posts } = {posts:[]};
+  const { posts } = { posts: [] }
 
   const defaultContextValue = {
     filter,

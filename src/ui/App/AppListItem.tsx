@@ -2,8 +2,8 @@
 import Image from 'next/image'
 import * as React from 'react'
 
-import { ListItem } from '~ui/_base/ListDetail/ListItem'
 import { AppItem } from '~modules/app/models/appModel'
+import { ListItem } from '~ui/_base/ListDetail/ListItem'
 
 // TODO: Figure out how to get this dynamically
 interface Props {
