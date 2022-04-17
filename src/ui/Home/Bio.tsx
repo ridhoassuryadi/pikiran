@@ -7,6 +7,8 @@ import Button from '~ui/_base/Button'
 import { Detail } from '~ui/_base/ListDetail/Detail'
 import { TitleBar } from '~ui/_base/ListDetail/TitleBar'
 
+import { WorkHistoryList } from './WorkHistory'
+
 function SectionTitle(props) {
   return (
     <h4
@@ -285,7 +287,7 @@ export function Intro() {
             <SectionContent>
               <Image
                 priority
-                src="/static/images/sf.png"
+                src="/static/images/serpong.png"
                 width={800}
                 height={400}
                 layout="responsive"
@@ -303,17 +305,7 @@ export function Intro() {
           <SectionContainer>
             <SectionTitle>Work</SectionTitle>
             <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {workHistory.map((job) => (
-                  <TableRow
-                    href={job.href}
-                    title={job.title}
-                    subtitle={job.subtitle}
-                    date={job.date}
-                    key={job.href}
-                  />
-                ))}
-              </div>
+              <WorkHistoryList />
             </SectionContent>
           </SectionContainer>
 
