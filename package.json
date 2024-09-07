@@ -1,15 +1,15 @@
 {
-  "name": "@jackyzha0/quartz",
+  "name": "@ridhoassuryadi/quartz",
   "description": "🌱 publish your digital garden and notes as a website",
   "private": true,
   "version": "4.3.1",
   "type": "module",
   "author": "jackyzha0 <j.zhao2k19@gmail.com>",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://ridhoassuryadi.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/ridhoassuryadi/pikiran.git"
   },
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
